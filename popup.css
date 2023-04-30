@@ -1,0 +1,27 @@
+.flex {
+    display: flex;
+}
+
+.output_span {
+    display: inline-block;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+#btn {
+    margin-left: auto;
+    width: 50px;
+    height: 25px;
+    border-radius: 12.5px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: #0075FF;
+}
+
+#btn:hover {
+    opacity:0.8;
+    cursor: pointer;
+    text-decoration: none;
+}

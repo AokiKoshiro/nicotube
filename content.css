@@ -1,0 +1,123 @@
+.ytp-left-controls{
+  position: relative;
+  /* overflow: visible; */
+}
+
+#comment-btn-outer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+  height: 100%;
+  aspect-ratio: 1 / 2;
+}
+
+/* #comment-btn-tooltip {
+  position: absolute;
+  top: -80%;
+  transform: translateX(-25%);
+  height: 50%;
+  line-height: 50%;
+  border-radius: 5%/10%;
+  padding: auto;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+#comment-btn-input:hover ~ #comment-btn-tooltip {
+  opacity: 0.7;
+} */
+
+#comment-btn-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#comment-btn-svg {
+  height: 50%;
+  position: absolute;
+  display: block;
+  inset: 0;
+  margin: auto;
+  box-sizing: border-box;
+  fill: #FFFFFF;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+#comment-btn-input:hover ~ #comment-btn-svg {
+  opacity: 1;
+}
+
+#comment-btn-input:checked ~ #comment-btn-svg {
+  opacity: 1;
+}
+
+#comment-btn-bar {
+  position: absolute;
+  bottom: 20%;
+  left: 55%;
+  width: 0;
+  height: 5%;
+  border-radius: 5%/50%;
+  background-color: #FF0000;
+  transition: width 0.25s, left 0.25s;
+}
+
+#comment-btn-input:checked ~ #comment-btn-bar {
+  left: 5%;
+  width: 90%;
+}
+
+#player {
+  overflow: hidden;
+}
+
+#nico-comments-outer {
+  pointer-events: none;
+  position: relative;
+  top: -95%;
+  left: 100%;
+  white-space: nowrap;
+  color          : #FFFFFF;
+  font-size: 25px;
+  letter-spacing : 2px;
+  text-shadow    : 
+       1px  1px 0px #000000,
+      -1px  1px 0px #000000,
+       1px -1px 0px #000000,
+      -1px -1px 0px #000000,
+       1px  0px 0px #000000,
+       0px  1px 0px #000000,
+      -1px  0px 0px #000000,
+       0px -1px 0px #000000;
+}
+
+.nico-comment-wrap {
+  display: block;
+}
+.nico-comment {
+  display: inline-block;
+  position: relative;
+}
+
+.time-marker {
+  display: inline-bock;
+  position: absolute;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  top: 0;
+  width: 0.45%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 100;
+}

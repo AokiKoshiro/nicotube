@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>設定</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+    <h3>コメントの表示時間</h3>
+    <div class="flex">
+        <input type="range" min="3" max="15" id="display_time_input" value="7">
+        <span class="output_span"><output id="display_time_output">7</output>秒</span>
+    </div>
+
+    <h3>コメントを早めに表示する</h3>
+    <div class="flex">
+        <input type="range" min="0" max="3" step="0.5" id="early_display_input" value="1.5">
+        <span class="output_span"><output id="early_display_output">1.5</output>秒</span>
+    </div>
+
+    <h3>コメントの不透明度</h3>
+    <div class="flex">
+        <input type="range" min="0" max="1" step="0.1" id="comment_opacity_input" value="0.8">
+        <span class="output_span"><output id="comment_opacity_output">0.8</output></span>
+    </div>
+
+    <h3>最大検索コメント数<span style="color:red; margin-left:5px">*</span></h3>
+    <div class="flex">
+        <input type="range" min="1" max="30" id="max_comments_input" value="10">
+        <span class="output_span"><output id="max_comments_output">1000</output></span>
+    </div>
+
+    <h3>最大コメント文字数<span style="color:red; margin-left:5px">*</span></h3>
+    <div class="flex">    
+        <input type="range" min="10" max="250" step="10" id="max_length_input" value="100">
+        <span class="output_span"><output id="max_length_output">100</output>文字</span>
+    </div>
+
+
+    <h3>APIキー<span style="color:red; margin-left:5px">*</span></h3>
+    <input type="password" id="api_key_input">
+
+    <p><span style="color:red; margin-right:5px">*</span>変更後「適用」を押すと再読み込みされます。</p>
+
+    <div class="btn-outer"><div id="btn">適用</div></div>
+
+    <script src="./popup.js"></script>
+</body>
+
+</html>
