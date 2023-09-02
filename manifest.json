@@ -11,7 +11,7 @@
         "48": "icons/icon48.png",
         "96": "icons/icon96.png"
     },
-    "browser_action": {
+    "action": {
         "default_popup": "popup.html"
     },
     "permissions": ["storage"]
